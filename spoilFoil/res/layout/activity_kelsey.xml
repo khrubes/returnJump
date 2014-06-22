@@ -24,51 +24,78 @@
         android:focusable="true" 
         android:focusableInTouchMode="true" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical"
-        android:background="@drawable/bg_card" >
-        
-        <EditText
-            android:id="@+id/newItemEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/edit_text_new_foodItem"
-            android:inputType="textCapWords"
-            android:singleLine="true"
-            android:imeOptions="actionNext" />
-        
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:background="@drawable/bg_toolbar"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/toolbar_add_item"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal" >
-            
-            <TextView
-                android:id="@+id/daysGoodTextView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@android:style/Widget.EditText"
-                android:hint="@string/edit_text_DaysGood"
-                android:drawableLeft="@drawable/ic_action_calendar"
-                android:singleLine="true" />
-            
-            <ImageButton
-                android:id="@+id/submitNewItemButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_action_add"
-                android:contentDescription="@string/add"
-                android:background="@drawable/button" />
-            
-        </LinearLayout>
-        
-    </LinearLayout>
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_add"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:contentDescription="@string/add"
+            android:background="@color/spoilfoil_theme"
+
+            />
+        <ImageButton
+            android:id="@+id/toolbar_edit_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_edit"
+            android:contentDescription="@string/edit"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/spoilfoil_theme"
+
+            />
+        <ImageButton
+            android:id="@+id/toolbar_undo_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_undo"
+            android:contentDescription="@string/undo"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/spoilfoil_theme"
+
+            />
+        <ImageButton
+            android:id="@+id/toolbar_delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_delete"
+            android:contentDescription="@string/delete"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/spoilfoil_theme"
+
+            />
+        <ImageButton
+            android:id="@+id/toolbar_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_camera"
+            android:contentDescription="@string/camera"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/spoilfoil_theme"
+            />
+
+
+      </LinearLayout>
 
 </LinearLayout>
