@@ -7,7 +7,7 @@
     android:padding="5dp"
     android:descendantFocusability="blocksDescendants"
     >
-    
+
     <TextView
             android:id="@+id/food_item_name"
             android:layout_width="0dp"
@@ -15,10 +15,12 @@
             android:layout_weight="3"
             android:paddingLeft="10dp"
             android:text="@string/edit_text_new_foodItem"
-            android:textColor="@color/black"
+            android:textColor="@color/dark_gray"
             android:textSize="22sp"
             android:maxLines="1"
             android:ellipsize="end" />
+
+
 
     <!--
         Only one of the LinearLayouts "expiration_message" and "expiration_time" will be
@@ -35,6 +37,7 @@
         android:layout_gravity="center" >
 
         <TextView
+            android:id="@+id/expiration_message_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -53,13 +56,14 @@
         android:orientation="vertical"
         android:padding="5dp" >
 
+
         <TextView
             android:id="@+id/expiration_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/number"
-            android:textColor="@color/black"
+            android:textColor="@color/dark_gray"
             android:textSize="18sp"
             android:maxLines="1"
             android:ellipsize="end" />
@@ -70,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/days"
-            android:textColor="@color/black"
+            android:textColor="@color/dark_gray"
             android:textSize="12sp"
             android:maxLines="1" />
         

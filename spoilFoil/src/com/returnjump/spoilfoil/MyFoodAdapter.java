@@ -1,6 +1,7 @@
 package com.returnjump.spoilfoil;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,10 +61,20 @@ public class MyFoodAdapter extends ArrayAdapter<FoodItem> {
               expirationMessage.setLayoutParams(paramShow);
               expirationTime.setLayoutParams(paramHide);
           }
-          
           // Set the tags for hidden data
           itemView.setTag(R.id.food_item_id, currentFood.getId());
-
+          TextView name = (TextView) itemView.findViewById(R.id.food_item_name);
+          TextView number = (TextView) itemView.findViewById(R.id.expiration_number);
+          TextView unit =  (TextView) itemView.findViewById(R.id.expiration_unit);
+          TextView expiration = (TextView) itemView.findViewById(R.id.expiration_message_text);
+          name.setTypeface(Typeface.createFromAsset(context.getAssets(),
+                  "assets/fonts/default.otf"));
+          number.setTypeface(Typeface.createFromAsset(context.getAssets(),
+                  "assets/fonts/default.otf"));
+          unit.setTypeface(Typeface.createFromAsset(context.getAssets(),
+                  "assets/fonts/default.otf"));
+          expiration.setTypeface(Typeface.createFromAsset(context.getAssets(),
+                  "assets/fonts/default.otf"));
           return itemView;
      }               
 }

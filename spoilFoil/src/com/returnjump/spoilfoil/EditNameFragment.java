@@ -3,6 +3,7 @@ package com.returnjump.spoilfoil;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -45,6 +46,8 @@ public class EditNameFragment extends DialogFragment {
 
         View view = inflater.inflate(R.layout.edit_name_fragment, container, false);
         editText = (EditText) view.findViewById(R.id.edit_text_dialog);
+        editText.setTypeface(Typeface.createFromAsset(getActivity().getAssets(),
+                "assets/fonts/spoilFoilFont.otf"));
         String fieldText = getArguments().getString("name");
         if(fieldText.equals("addingItemName")){
             editText.setHint("Item name");
